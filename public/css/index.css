@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+  }
+  
+  .overlayViewport {
+    position: fixed;
+    height: 80px;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  
+  .contentViewport {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 80px; /* compensate for 1px border */
+  }
+  
+  .overlayViewport,
+  .contentViewport {
+    overflow: hidden;
+  }
+  
+  .overlayViewport .content-wrapper {
+    background: rgba(130, 130, 130, 1.0);
+    overflow: hidden;
+  }
+  
+  .overlayViewport .content {
+    opacity: 0.7;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+  
+  .overlayContent {
+    color: white;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding-top: 0px;
+  }
+  
+  .overlayContent a {
+    color: #e7e7e7;
+    text-decoration: none;
+  }
+  
+  .overlayContent a:hover {
+    color: white;
+  }
+  
+  .nav-item-left {
+    display: inline-block;
+    border: 0px solid black;
+    width: 14%;
+    text-align: left;
+    padding-left: 20px;
+    vertical-align: top;
+    padding-top: 30px;
+  }
+  
+  .nav-item-left-special {
+    display: inline-block;
+    border: 0px solid black;
+    width: 20%;
+    text-align: left;
+    padding-left: 20px;
+    vertical-align: top;
+    padding-top: 30px;
+  }
+  
+  .nav-item-center {
+    display: inline-block;
+    border: 0px solid black;
+    width: 24%;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 25px;
+  }
+  
+  .nav-item-right {
+    display: inline-block;
+    border: 0px solid black;
+    width: 28%;
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #e7e7e7;
+  }
+  
+  ::-moz-placeholder {
+    font-size: 14px;
+    color: #e7e7e7;
+  }
+  
+  :-ms-input-placeholder {
+    font-size: 14px;
+    color: #e7e7e7;
+  }
+  
+  :-o-input-placeholder {
+    font-size: 14px;
+    color: #e7e7e7;
+  }
+  
