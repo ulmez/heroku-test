@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     
-    <link rel="stylesheet" href="{{ URL::to('css/style.css') }}">
-    <link rel="stylesheet" href="{{ URL::to('css/index.css') }}">
+    <link rel="stylesheet" href="{{ secure_url('css/style.css') }}">
+    <link rel="stylesheet" href="{{ secure_url('css/index.css') }}">
   </head>
   <body>
     <div class="outer-container">
@@ -55,10 +55,10 @@
       </div>
       <div class="contentViewport">
         <div class="content">
-          <img src="{{ URL::to('img/pan-banner.png') }}" />
+          <img src="{{ secure_url('img/pan-banner.png') }}" />
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="{{ URL::to('js/index.js') }}"></script>
+    <script type="text/javascript" src="{{ secure_url('js/index.js') }}"></script>
   </body>
 </html>
