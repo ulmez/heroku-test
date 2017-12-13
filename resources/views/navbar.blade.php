@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
     
-    <link rel="stylesheet" href="{{ secure_url('css/style.css') }}">
-    <link rel="stylesheet" href="{{ secure_url('css/index.css') }}">
+    <link rel="stylesheet" href="{{ parse_url(URL::to('/'))['scheme'] === 'http' ? URL::to('css/style.css') : secure_url('css/style.css') }}">
+    <link rel="stylesheet" href="{{ parse_url(URL::to('/'))['scheme'] === 'http' ? URL::to('css/index.css') : secure_url('css/index.css') }}">
   </head>
   <body>
     <div class="outer-container">
@@ -55,10 +55,10 @@
       </div>
       <div class="contentViewport">
         <div class="content">
-          <img src="{{ secure_url('img/pan-banner.png') }}" />
+          <img src="{{ parse_url(URL::to('/'))['scheme'] === 'http' ? URL::to('img/pan-banner.png') : secure_url('img/pan-banner.png') }}" />
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="{{ secure_url('js/index.js') }}"></script>
+    <script type="text/javascript" src="{{ parse_url(URL::to('/'))['scheme'] === 'http' ? URL::to('js/index.js') : secure_url('js/index.js') }}"></script>
   </body>
 </html>
