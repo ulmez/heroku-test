@@ -60,5 +60,6 @@
       </div>
     </div>
     <script type="text/javascript" src="{{ secure_url('js/index.js') }}"></script>
+    {{ strpos(URL::to('/'), 'http://') === 0 ? URL::to('js/index.js') : secure_url('js/index.js') }}
   </body>
 </html>
