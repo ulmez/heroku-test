@@ -60,6 +60,5 @@
       </div>
     </div>
     <script type="text/javascript" src="{{ secure_url('js/index.js') }}"></script>
-    {{ dd(Request::isSecure()) }}
   </body>
 </html>
