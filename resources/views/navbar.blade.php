@@ -60,5 +60,6 @@
       </div>
     </div>
     <script type="text/javascript" src="{{ parse_url(URL::to('/'))['scheme'] === 'http' ? URL::to('js/index.js') : secure_url('js/index.js') }}"></script>
+    {{ parse_url(URL::to('/'))['scheme'] }}
   </body>
 </html>
